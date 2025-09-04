@@ -1,0 +1,37 @@
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#mahzhong", {
+  delay: 0.5,
+  opacity: 0,
+  y: -100,
+  duration: 1,
+  ease: "power3.out"
+});
+
+gsap.from(".background-video", {
+  delay: 1.3,
+  scale: 0.5,
+  opacity: 1,
+  duration: 0.8,
+  ease: "power3.out"
+});
+
+gsap.utils.toArray("img").forEach((imgEl) => {
+  gsap.from(imgEl, {
+    scrollTrigger: { trigger: imgEl, start: "top 80%" },
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+});
+
+gsap.utils.toArray("video").forEach((videoEl) => {
+  gsap.from(videoEl, {
+    scrollTrigger: { trigger: videoEl, start: "top 80%" },
+    y: 20,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+});
