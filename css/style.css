@@ -1,6 +1,7 @@
 :root {
-  --color-white: #ffffff;
-  --color-text-main: #212121;
+  --color-bg: #ffffff;
+  --color-text-light: #ffffff;
+  --color-text-dark: #212121;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
   margin: 0px;
 }
 
@@ -28,7 +29,6 @@ section {
 .landing-content{
   display: flex;
   justify-content: center; 
-  align-items: center; 
   height: 100vh;
 }
 
@@ -44,14 +44,14 @@ section {
 
 .landing-content h1 {
   z-index: 10;
+  top: 25vh;
 }
 
-
 h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 60px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -0.04em;
-  color: var(--color-white);
+  font-family: "benton-modern-display-compre", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 240px;
+  letter-spacing: -0.015em;
+  color: var(--color-text-dark);
 }
