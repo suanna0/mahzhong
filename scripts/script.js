@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#mahzhong", {
-  delay: 0.8,
+  delay: 1.8,
   opacity: 0,
   y: -200,
   duration: 0.8,
@@ -9,7 +9,7 @@ gsap.to("#mahzhong", {
 });
 
 gsap.from(".background-video", {
-  delay: 1.8,
+  delay: 2.8,
   scale: 0.25,
   opacity: 1,
   duration: 0.8,

@@ -22,7 +22,7 @@ section {
   height: 100vh;
 }
 
-.main-wrapper, .landing-wrapper{
+.landing-wrapper{
   padding: 0px 0px;
 }
 
@@ -42,16 +42,33 @@ section {
   z-index: -1;
 }
 
-.landing-content h1 {
-  z-index: 10;
-  top: 25vh;
-}
 
-h1 {
+h1, h2 {
+  margin: 0px;
   font-family: "benton-modern-display-compre", serif;
   font-weight: 300;
   font-style: italic;
   font-size: 240px;
   letter-spacing: -0.015em;
   color: var(--color-text-dark);
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.landing-content h1 {
+  z-index: 10;
+  padding-top: 10vh;
+}
+
+.main-wrapper {
+  margin: 0 20px;
+  padding-top: 15%;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
 }
