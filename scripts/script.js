@@ -9,18 +9,14 @@ gsap.to("#mahzhong", {
 });
 
 gsap.from(".background-video", {
-  delay: 0.2,
-  opacity: 0,
-  duration: 0.2,
+  delay: 2.8,
+  scale: 0.25,
+  duration: 0.8,
   ease: "power3.out"
 });
 
-gsap.from(".background-video", {
-  delay: 2.8,
-  scale: 0.25,
-  opacity: 1,
-  duration: 0.8,
-  ease: "power3.out"
+gsap.to(".background-video", {
+  opacity: 1
 });
 
 gsap.utils.toArray("img").forEach((imgEl) => {
